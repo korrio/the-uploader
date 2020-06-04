@@ -6,11 +6,6 @@
     } else {
         $job_no = "11111";
     }
-    include('../stat/2013/_db.php');
-    include("../stat/2013/ajax/_fn_detail.php");
-    $o = get_job_detail( $job_no . "");
-    $v = $o[0];
-    //print_r($v);
 ?>
 
 <!DOCTYPE HTML>
@@ -367,7 +362,7 @@
         <li class="active"><a href="index.html">บันทึกการทำงาน</a></li>
     </ul>
     <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" frameborder="0" src="../stat/2013/check/ochat.php?job_no=<?php echo $job_no;?>"></iframe>
+    <iframe class="embed-responsive-item" frameborder="0" src="#"></iframe>
 
     </div>
     
@@ -381,7 +376,7 @@
     </ul>
 
     <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" frameborder="0" src="../stat/2013/check/vchat.php?job_no=<?php echo $job_no;?>"></iframe>
+    <iframe class="embed-responsive-item" frameborder="0" src=""></iframe>
     
     </div>
 </div>
@@ -636,7 +631,7 @@ if((dead - today) <= (oneDay)) {
     }
 
     $(function(){
-        call("<?php echo $job_no;?>","","","","");
+        //call("<?php echo $job_no;?>","","","","");
     });
 </script>
 

@@ -10,10 +10,10 @@
  * https://opensource.org/licenses/MIT
  */
 
-error_reporting(E_ALL | E_STRICT);
+//error_reporting(E_ALL | E_STRICT);
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: *");
-ini_set( "display_errors", 1 );
+//ini_set( "display_errors", 1 );
 require('UploadHandler.php');
 //require('UploadHandlerSpecPath.php');
 
